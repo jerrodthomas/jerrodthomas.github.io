@@ -11,7 +11,7 @@
     }
     
     .red {
-        background-color: #cc0000;
+        background-color: #e10a2e;
         color: #000;
     }
     
@@ -61,13 +61,11 @@
     }
     
     a:hover {
-        text-decoration: underline;
+        text-align: right;
     }
     
     .active {
        font-style: italic;
-        text-decoration: overline;
-        
     }
     
     .center {
@@ -103,18 +101,17 @@
     
     #hello {
         width: 1175px;
-        margin-top: -455px;
+        margin-top: -475px;
         margin-left: 90px;
         height: 432px;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         text-align: center;
+        line-height: 350px;
     }
     
-    #ufp {
-        width: 375px;
-        margin-top: 50px;
-        margin-left: 200px;
+    #home {
+        text-decoration: none;
         
     }
 }
