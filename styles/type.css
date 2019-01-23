@@ -1,48 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Charm|IBM+Plex+Serif');
-        
-body {
-    font-family: 'IBM Plex Serif', serif;
-}
-
-.cursive {
-        font-family: 'Charm', cursive;
-        text-shadow: 2px 2px 2px #cc0000;
-        text-align: center;
-}
-
-.female {
-    text-shadow: 2px 2px 2px #d86b93;
-}
-
-.male {text-shadow: 2px 2px 2px rgba(0,0,102,0.8);}
-
-h1 {font-size: 72px;}
-
-a {
-    font-family: 'Black Han Sans', sans-serif;
-    text-transform: lowercase;
-    text-decoration: none;
-    color: #000066;
-    padding-left: 5px;
-    text-align: center;
-}
-
-.dropbtn {
-    font-family: 'Black Han Sans', sans-serif;
-    text-transform: lowercase;
-    text-decoration: none;
-    color: #000066;
-    padding-left: 5px;
-    text-align: center;
-}   
-
-.dropdown {
-    font-family: 'Black Han Sans', sans-serif;
-}
-
-#jerrod {
-    text-align: center;
-    font-family: 'Charm', cursive;
-    text-shadow: 2px 2px 2px #000;
-    color: #cc0000;
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+    
+    body {
+            font-family: 'Oswald', sans-serif;
 }
