@@ -43,7 +43,7 @@
     }
     
     #name {
-        margin-top: -35px;
+        margin-top: -24px;
         margin-right: 20px;
         padding-left: 5px;
         padding-right: 5px;
@@ -72,14 +72,14 @@
     
     .center {
         line-height: 50px;
-        text-align: center;
+        text-indent: 25px;
     }
     
     .column {
         width: 105px;
         height: 50px;
         margin-top: 5px;
-        border-radius: 3px;
+        
     }
     
     #blank {
@@ -94,5 +94,27 @@
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 10px;
         border-top-right-radius: 10px;
+    }
+    
+    #contact {
+        line-height: 50px;
+        text-indent: 20px;
+    }
+    
+    #hello {
+        width: 1175px;
+        margin-top: -455px;
+        margin-left: 90px;
+        height: 432px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        text-align: center;
+    }
+    
+    #ufp {
+        width: 375px;
+        margin-top: 50px;
+        margin-left: 200px;
+        
     }
 }
