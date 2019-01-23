@@ -15,6 +15,7 @@
         background-color: #cc9900;
         color: #000;
     }
+    
     #menu {
         display: hidden;
     }
@@ -29,10 +30,7 @@
         text-align: center;
     }
     
-    #ufp {
-        width: 375px;
-        margin-top: 50px;
-        margin-left: 200px;
-        
+    #home {
+        display: hidden;
     }
 }
