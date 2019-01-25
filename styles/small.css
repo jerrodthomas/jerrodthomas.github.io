@@ -15,7 +15,6 @@
         background-color: #cc9900;
         color: #000;
     }
-    
     #menu {
         display: hidden;
     }
@@ -28,9 +27,13 @@
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         text-align: center;
+        background: url('../images/ufp.svg');
     }
     
-    #home {
-        display: hidden;
+    #ufp {
+        width: 375px;
+        margin-top: 50px;
+        margin-left: 200px;
+        
     }
 }
