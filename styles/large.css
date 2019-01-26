@@ -1,5 +1,10 @@
 @media only screen and (min-width: 800px) {
     /* ALL PAGES */
+        
+    @keyframes access {
+        from {color: #000;}
+        to {color: #e10a2e;}
+    }
     
     body {
         background-color: #000;
@@ -62,6 +67,11 @@
         width: 100%;
     }
     
+    #index #hello {
+        animation-name: access;
+        animation-duration: 5s;
+    }
+    
     /* LINKS */
     
     a {
@@ -80,7 +90,7 @@
     }
     
     .column {
-        width: 105px;
+        /*width: 105px;*/
         height: 50px;
         margin-top: 5px;
         
@@ -107,7 +117,7 @@
     
     #index #hello {
         width: 1275px;
-        margin-top: -457px;
+        margin-top: -477px;
         margin-left: 90px;
         height: 435px;
         border-top-left-radius: 25px;
@@ -126,6 +136,15 @@
     
     #hover:hover {
         background-color: #5e3784;
+    }
+    
+    button {
+        width: 91px;
+        border: none;
+        text-align: center;
+        display: flex;
+        font-size: 18px;
+        font-style: bolder;
     }
         
     /* ABOUT.HTML */
@@ -162,6 +181,16 @@
         border-top-left-radius: 25px;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
+    }
+    
+    #loop {
+        margin-left: 100px;
+        width: 100px;
+        margin-top: -80px;
+    }
+    
+    #about #menu {
+        height: 75px;
     }
     
     #menu2 {
