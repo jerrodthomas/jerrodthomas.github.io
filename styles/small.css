@@ -1,6 +1,7 @@
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 414px) {
     
     body {
+        width: 100%;
         background-color: #000;
         color: #999;
     }
