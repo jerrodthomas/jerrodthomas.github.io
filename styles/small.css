@@ -11,15 +11,7 @@
     }
     
     /* div colors */
-    
-    .yellow {
-        background-color: #cc9900;
-        color: #000;
-    }
-    #menu {
-        display: hidden;
-    }
-    
+        
     #hello {
         width: 1175px;
         margin-top: -455px;
@@ -32,7 +24,7 @@
     }
     
     #ufp {
-        width: 375px;
+        width: 37px;
         margin-top: 50px;
         margin-left: 200px;
         
