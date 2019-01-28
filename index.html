@@ -8,39 +8,56 @@
         <link href='styles/large.css' rel='stylesheet' type='text/css'>
         <link href='styles/type.css' rel='stylesheet' type='text/css'>
         <link href="styles/nav.css" rel="stylesheet" type="text/css">
-        <script src="scripts/access.js"></script>
-        <script src="scripts/alert.js"></script>
-        <title>
-            Jerrod's Site
-        </title>
+        <script src="scripts/clock.js"></script>
     </head>
     <body id="index" onload="clickFunction()">
-        <div class="yellow" id="top">
-            &nbsp;
-        </div>
-        <div id="name" class="black">USS JERROD &ordm; CIT 261</div>
-        <div id="menu" class="yellow">
-            MENU
-        </div>
-        <button id="enter" class="center hover column red" onclick="myFunction()">ENTER</button>
-        <div id="hover" class="center hover column blue">
-            <a href="about.html">ABOUT</a>
-        </div>
-            
-        <div id="contact" class="column hover red">
-            <a href="mailto:jerrod.thomas@gmail.com" target="#">CONTACT</a>
-        </div>
-        <div id="blacksmith" class="center hover column blue">
-            <a href="#">DESIGN</a>
-        </div>
-        <div id="family" class="center hover column red">
-            <a href="http://jerrodthomas.github.io/indes.html" target="#">FAMILY</a>
-        </div>
-        
-        <div id="blank" class="center column yellow">&nbsp;</div>
-        <div id="bottom" class="yellow">&nbsp;</div>
-        <div id="hello" class="black">
-            <h1 id="demo"></h1>
-        </div>
+        <table>
+            <tr>
+                <th colspan="2">
+                    <p id="h1">JERROD'S SITE</p>
+                    <p id="mouth">
+                        So long, and thanks for all the fish.
+                    </p>
+                </th>
+                <td class="border">
+                    <h2><a href="art.html">ARTWORK</a></h2>
+                    my artwork
+                </td>
+                <td class="border">
+                    <h2><a href="#">GENEALOGY</a></h2>
+                    my family history
+                </td>
+            </tr>
+            <tr>
+                <td class="border">
+                    <h2><a href="#">DESIGN</a></h2>
+                    Blacksmith Designs
+                </td>
+                <th rowspan="2">
+                    <iframe src="https://www.youtube.com/embed/vW5IHewoypA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </th>
+                <th colspan="2">
+                    <img src="images/wave00.gif" alt="Molly">
+                </th>
+            </tr>
+            <tr>
+                <td class="border">
+                    <h2>
+                        <a href="#">ABOUT</a>
+                    </h2>
+                    about me
+                </td>
+                <td class="border">
+                    <h2>
+                        <a href="mailto:jerrod.thomas@gmail.com">CONTACT</a>
+                    </h2>
+                    Em@il me
+                </td>
+                <td id="txt" class="border">
+                    <h2><a href="#">TIME</a></h2>
+                    <p id="demo"></p>
+                </td>
+            </tr>
+        </table>
     </body>
 </html>
