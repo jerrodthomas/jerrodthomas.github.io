@@ -1,5 +1,6 @@
 [
   {
+    "codename": "Batman",
     "name": "Bruce Wayne",
     "first" : "Detective Comics #27",
     "facts": {
@@ -8,6 +9,7 @@
     }
   },
   {
+    "codename": "Superman",
     "name": "Barky",
     "first" : "dog",
     "facts": {
