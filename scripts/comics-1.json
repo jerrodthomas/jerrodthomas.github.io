@@ -9,17 +9,17 @@
   },
   {
     "name": "Barky",
-    "species" : "dog",
-    "foods": {
-      "likes": ["bones", "carrots"],
+    "first" : "dog",
+    "facts": {
+      "nemesis": ["bones", "carrots"],
       "dislikes": ["tuna"]
     }
   },
   {
     "name": "Purrpaws",
-    "species" : "cat",
-    "foods": {
-      "likes": ["mice"],
+    "first" : "cat",
+    "facts": {
+      "nemesis": ["mice"],
       "dislikes": ["cookies"]
     }
   }
