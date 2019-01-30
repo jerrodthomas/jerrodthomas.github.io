@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Bruce Wayne",
+    "first" : "Detective Comics #27",
+    "facts": {
+      "nemesis": ["Joker", "Bane"],
+      "dislikes": ["crime", "Raman noodles"]
+    }
+  },
+  {
+    "name": "Barky",
+    "species" : "dog",
+    "foods": {
+      "likes": ["bones", "carrots"],
+      "dislikes": ["tuna"]
+    }
+  },
+  {
+    "name": "Purrpaws",
+    "species" : "cat",
+    "foods": {
+      "likes": ["mice"],
+      "dislikes": ["cookies"]
+    }
+  }
+]
