@@ -4,8 +4,8 @@
     "name": "Bruce Wayne",
     "first" : "Detective Comics #27 May 1939",
     "facts": {
-      "father": ["Thomas Wayne"],
-      "mother": ["Martha Wayne"]
+      "base": ["Gotham City"],
+      "create": ["Bob Kare", "Bill Finger"]
     }
   },
   {
