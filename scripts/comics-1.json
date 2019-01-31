@@ -2,19 +2,19 @@
   {
     "code": "Batman",
     "name": "Bruce Wayne",
-    "first" : "Detective Comics #27",
+    "first" : "Detective Comics #27 May 1939",
     "facts": {
-      "nemesis": ["Joker", "Bane"],
-      "dislikes": ["crime", "Raman noodles"]
+      "father": ["Thomas Wayne"],
+      "mother": ["Martha Wayne"]
     }
   },
   {
     "code": "Superman",
-    "name": "Barky",
-    "first" : "dog",
+    "name": "Clark Kent/ Kal-El",
+    "first" : "Actiob Comics #1 June 1938",
     "facts": {
-      "nemesis": ["bones", "carrots"],
-      "dislikes": ["tuna"]
+      "father": ["Johnathon", "carrots"],
+      "mother": ["Martha Kent"]
     }
   },
   {
