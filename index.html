@@ -8,56 +8,30 @@
         <link href='styles/large.css' rel='stylesheet' type='text/css'>
         <link href='styles/type.css' rel='stylesheet' type='text/css'>
         <link href="styles/nav.css" rel="stylesheet" type="text/css">
-        <script src="scripts/clock.js"></script>
+        <!--<script src="scripts/clock.js"></script>-->
     </head>
-    <body id="index" onload="clickFunction()">
-        <table>
-            <tr>
-                <th colspan="2">
-                    <p id="h1">JERROD'S SITE</p>
-                    <p id="mouth">
-                        So long, and thanks for all the fish.
-                    </p>
-                </th>
-                <td class="border">
-                    <h2><a href="art.html">ARTWORK</a></h2>
-                    my artwork
-                </td>
-                <td class="border">
-                    <h2><a href="#">GENEALOGY</a></h2>
-                    my family history
-                </td>
-            </tr>
-            <tr>
-                <td class="border">
-                    <h2><a href="#">DESIGN</a></h2>
-                    Blacksmith Designs
-                </td>
-                <th rowspan="2">
-                    <iframe src="https://www.youtube.com/embed/vW5IHewoypA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </th>
-                <th colspan="2">
-                    <img src="images/wave00.gif" alt="Molly">
-                </th>
-            </tr>
-            <tr>
-                <td class="border">
-                    <h2>
-                        <a href="#">ABOUT</a>
-                    </h2>
-                    about me
-                </td>
-                <td class="border">
-                    <h2>
-                        <a href="mailto:jerrod.thomas@gmail.com">CONTACT</a>
-                    </h2>
-                    Em@il me
-                </td>
-                <td id="txt" class="border">
-                    <h2><a href="#">TIME</a></h2>
-                    <p id="demo"></p>
-                </td>
-            </tr>
-        </table>
+    <body id="index"><!--onload="clickFunction()"-->
+        <div id="top">
+            <div id="one" class="yellow">&nbsp;</div>
+            <div id="two" class="black">cit 261 &middot; jerrod Thomas</div>
+            <div id="three" class="yellow">&nbsp;</div>
+        </div>
+        <div id="menu">
+            <div class="yellow" id="five"><p id="demo"></p><p>MENU</p></div>
+            <div id="six" class="red button"><a href="#" class="active">HOME</a></div>
+            <div id="seven" class="blue button"><a href="about.html" target="frame">ABOUT</a></div>
+            <div id="eight" class="green button"><a href="#">DESIGN</a></div>
+            <div id="nine" class="purple button"><a href="artowrk.html">ARTWORK</a></div>
+            <div id="ten" class="green button"><a href="#">BLOG</a></div>
+            <div id="eleven" class="blue button"><a href="about.html">GENEALOGY</a></div>
+            <div id="twelve" class="red button"><a href="#">CONTACT</a></div>
+            <div id="fourteen" class="yellow button">&nbsp;</div>
+        </div>
+        <div id="four" class="frame">
+            <iframe src="https://www.youtube.com/embed/vW5IHewoypA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen name="frame"></iframe>
+        </div>
+        <div id="bottom">
+            <div id="fifteen" class="yellow">&nbsp;</div>
+        </div>
     </body>
 </html>
