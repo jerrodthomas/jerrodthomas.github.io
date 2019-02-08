@@ -2,7 +2,9 @@
     
     body {
         background-color: #000;
-        color: #999;
+        color: #f4b637;
+       overflow-x: hidden;
+       text-transform: uppercase;
     }
     
     .top {
