@@ -25,6 +25,10 @@
         display: hidden;
     }
     
+    iframe {
+        display: hidden;
+    }
+    
     /* LINKS */
     
     a {
