@@ -24,4 +24,19 @@
     #frame {
         display: hidden;
     }
+    
+    /* LINKS */
+    
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: powderblue;
+    }
+    
+    .active {
+        color: #fff;
+    }
 }
