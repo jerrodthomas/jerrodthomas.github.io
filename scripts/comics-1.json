@@ -1,11 +1,26 @@
 [
   {
-    "code": "Batman",
-    "name": "Jerrod Thomas",
-    "first" : "Detective Comics #27 May 1939",
-    "facts": {
-      "base": ["Gotham City"],
-      "create": ["Bob Kare", "Bill Finger"]
+    "name": "Jerrod",
+    "species" : "human",
+    "foods": {
+      "likes": ["tacos", "pizza"],
+      "dislikes": ["bullies", "your mom"]
+    }
+  },
+  {
+    "name": "Barky",
+    "species" : "dog",
+    "foods": {
+      "likes": ["bones", "carrots"],
+      "dislikes": ["tuna"]
+    }
+  },
+  {
+    "name": "Purrpaws",
+    "species" : "cat",
+    "foods": {
+      "likes": ["mice"],
+      "dislikes": ["cookies"]
     }
   }
 ]
