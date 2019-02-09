@@ -1,28 +1,11 @@
 [
   {
     "code": "Batman",
-    "name": "Bruce Wayne",
+    "name": "Jerrod Thomas",
     "first" : "Detective Comics #27 May 1939",
     "facts": {
       "base": ["Gotham City"],
       "create": ["Bob Kare", "Bill Finger"]
-    }
-  },
-  {
-    "code": "Superman",
-    "name": "Clark Kent/ Kal-El",
-    "first" : "Actiob Comics #1 June 1938",
-    "facts": {
-      "father": ["Johnathon", "carrots"],
-      "mother": ["Martha Kent"]
-    }
-  },
-  {
-    "name": "Purrpaws",
-    "first" : "cat",
-    "facts": {
-      "nemesis": ["mice"],
-      "dislikes": ["cookies"]
     }
   }
 ]
