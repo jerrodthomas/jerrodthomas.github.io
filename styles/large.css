@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Share+Tech+Mono');
 
 
 body {
     background-color:#000;
     text-transform: uppercase;
-    font-family: 'Anonymous Pro', monospace;
+    font-family: 'Share Tech Mono', monospace;
 }
 
+#transition {
+    color: #999;
+}
 a {
     color:#9cf;
     text-decoration:none;
@@ -14,6 +17,7 @@ a {
 
  a:hover {
      text-decoration:underline;
+     font-size: 3em;
  }
 
  a:visited {
@@ -22,11 +26,11 @@ a {
 
  img, embed, iframe {
      /*#9cf #fc6 #999 #c66 #c9c*/
-     border-top:0.5em solid #9cf;
+     /*border-top:0.5em solid #99ccff;
      border-bottom:0.5em solid #fc6;
      border-left:0.5em solid #c66;
      border-right:0.5em solid #c9c;
-     border-radius: 1em;
+     border-radius: 1em;*/
      margin: 0.1em;
 }
 
@@ -45,7 +49,7 @@ input, textarea {
 
 .top_left_menu {
     position: relative;
-    background-color:#c66;
+    background-color:/*#c66*/#cd6363;
     height: 1em;
     width: 9.4em;
     top: -5.1em;
@@ -263,51 +267,73 @@ input, textarea {
  }
  
  a.button {
-  background-color:#f90;
-  border-radius: 2em;
-  color:#000;
-  text-decoration:none;
-  height:0.8em;
-  line-height:0.8em;
-  font-weight:bold;
-  font-size:1em;
-  text-align:center;
-  border-top:0.5em solid #f90;
-  border-bottom:0.5em solid #f90;
-  border-left:1em solid #f90;
-  border-right:1em solid #f90;
-  display:inline-block;
-     width: 6.75em;
-     font-family: 'Press Start 2P', cursive;
+     background-color:#ff9c0d;
+     border-radius: 2em;
+     color:#000;
+     text-decoration:none;
+     height:0.8em;
+     line-height:0.8em;
+     font-weight:bold;
+     font-size:1em;
+     text-align:center;
+     border-top:0.5em solid #f90;
+     border-bottom:0.5em solid #f90;
+     border-left:1em solid #f90;
+     border-right:1em solid #f90;
+     display:inline-block;
+     width: 5em;
+     font-family: 'Share Tech Mono', monospace;
+     -webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
+     transition: width 1s, height 1s;
  }
 
 #btn {
-    text-transform: uppercase;
-    background-color:#f90;
-  border-radius: 2em;
-  color:#000;
-  text-decoration:none;
-  /*height:1em;
-  line-height:0.8em;
-  font-weight:bold;
-  font-size:1em;*/
-  text-align:center;
-  border-top:0.5em solid #f90;
-  border-bottom:0.5em solid #f90;
-  border-left:1em solid #f90;
-  border-right:1em solid #f90;
-  display:inline-block;
+    background-color:#ff9c0d;
+     border-radius: 2em;
+     color:#000;
+     text-decoration:none;
+     height:25px;
+     /*line-height:0.8em;*/
+     font-weight:bold;
+     font-size:21px;
+     text-align:center;
+     border-top:1px solid #f90;
+     border-bottom:1px solid #f90;
+     border-left:2px solid #f90;
+     border-right:2px solid #f90;
+     display:inline-block;
+     width: 5em;
+     font-family: 'Share Tech Mono', monospace;
  }
 
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+ul {
+    list-style-type: none;
+}
 
- .button:hover {
-  background-color:#fc6;
-  border-top:0.5em solid #fc6;
-  border-bottom:0.5em solid #fc6;
-  border-left:1em solid #fc6;
-  border-right:1em solid #fc6;
- }
+p {
+    text-transform: none;
+}
 
+p a:hover {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: #000;
+    background-color:#ffe7ad;
+    border-top:0.5em solid #ffe7ad;
+    border-bottom:0.5em solid #ffe7ad;
+    border-left:1em solid #ffe7ad;
+    border-right:1em solid #ffe7ad;
+    width: 8em;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+}
  .bloc_contents {
   position:relative;
   left:20em; /* width du menu */
