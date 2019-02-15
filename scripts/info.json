@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Jerrod Thomas",
+    "home" : "Artesia, New Mexico",
+    "faorites": {
+      "comics": ["X-Men", "Batman"],
+      "music": ["80s", "Classic Rock"],
+      "movies": ["horror", "sci fi", ""fantasy"]
+      "shows": ["Big Bang Theory", "Joe Kenda", "Star Trek"]
+    }
+  }
+]
