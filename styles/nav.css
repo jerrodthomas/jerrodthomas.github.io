@@ -1,0 +1,34 @@
+@media only screen and (min-width: 800px) {
+    
+    #nav {
+        background-color: #000;
+        text-align: center;
+    }
+    
+    nav {
+        padding-bottom: 7px;
+    }
+    
+    /* LINKS */
+    
+    a {
+        color: #0099f6;
+    }
+    
+    a:hover {
+        background-color: #00b844;
+        padding: 7px 7px 7px 7px;
+        color: #000;
+    }
+    
+    .active {
+        background-color: #f2c300;
+        padding: 7px 7px 7px 7px;
+        color: #000;
+    }
+    
+    .active:hover {
+        background-color: #df0000;
+        padding: 7px 7px 7px 7px;
+        color: #000;
+    }
