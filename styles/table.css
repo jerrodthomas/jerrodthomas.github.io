@@ -1,0 +1,52 @@
+table {
+    text-align: justify;
+}
+
+.left {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#bio {
+    background-color: rgba(255,0,127,0.6);
+    width: 350px;
+}
+
+#stats {
+    padding-left: 30px;
+}
+
+.other {
+    padding-left: 10px;
+}
+
+/* IMAGES */
+
+#bio {
+    margin-top: -105px;
+    width: 250px;
+    
+}
+    
+.thelma {
+    width: 200px;
+    float: left;
+    padding-right: 10px;
+}
+
+.morgan {
+    width: 200px;
+    float: right;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.horizontal {
+    height: 269px;
+    float: left;
+    padding-right: 10px;
+}
+
+.img:hover {
+    width: 555px;
+}
