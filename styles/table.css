@@ -2,7 +2,7 @@ table {
     text-align: justify;
 }
 
-.p {
+p {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -32,19 +32,21 @@ table {
     width: 200px;
     float: left;
     padding-right: 10px;
+    padding-left: 10px;
 }
 
 .morgan {
     width: 200px;
     float: right;
     padding-left: 10px;
-    padding-right: 5px;
+    padding-right: 10px;
 }
 
 .horizontal {
     height: 269px;
     float: left;
     padding-right: 10px;
+    padding-left: 10px;
 }
 
 .img:hover {
