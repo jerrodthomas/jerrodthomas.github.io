@@ -59,7 +59,6 @@
     
     #cca img {
         width: 100px;
-        
     }
     
     div h1 {
@@ -78,6 +77,7 @@
         border: 2px solid #000;
         margin-left: -5px;
         margin-top: -2px;
+        float:left;
     }
 }
 
