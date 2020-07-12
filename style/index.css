@@ -35,6 +35,7 @@
         margin-top: -2px;
         padding-top: 10px;
     }
+    
     #info {
         background-color: #fff;
         color: #000;
@@ -59,30 +60,28 @@
     
     #cca img {
         width: 100px;
+        
     }
     
-    div h1 {
-        font-family: 'Fredericka the Great', cursive;
-        font-size: 8em;
-        margin-top: 17px;
-        color: #cc0000;
-        text-shadow: 5px 5px #ffdead;
-        margin-left: 2px;
+    #link {margin-left: 1010px; margin-top: 100px;}
+    #cornerbox {
+        border: 2px solid #000;
+        margin: -2px 0px 0px -5px;
+        width: 120px;
+        height: 260px;
+        background-image: url("../images/box01.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     
     /* IMAGES */
     
-    #cornerbox {
+    #cornerbox img {
         width: 120px;
-        border: 2px solid #000;
-        margin: -2px 0px 0px -5px;
-        float:left;
     }
 }
 
-a {margin-left: 800px; margin-top: 100px;}
-
-@media only screen and (max-width: 1199px) and (min-width: 600px)  {
+media only screen and (max-width: 1199px) and (min-width: 600px)  {
     body {
         /*background-image: url("../images/wall.jpg");0
       background-size: cover;
