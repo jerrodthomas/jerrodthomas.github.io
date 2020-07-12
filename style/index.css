@@ -72,6 +72,7 @@
         background-image: url("../images/box01.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        visibility: hidden;
     }
     
     /* IMAGES */
