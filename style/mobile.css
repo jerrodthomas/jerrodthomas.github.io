@@ -1,31 +1,23 @@
-@media only screen and (max-width: 2000px) and (min-width: 1200px)  {
+@media only screen and (max-width: 600px)  {
     body {
-        background-image: url("../images/addamshouse.jpg");
+        background-image: url("../images/box01.jpg");
         background-size: cover;
     }
     
     /* DIVS */
     
-    i {
-        font-style: none;
-        font-size: 1.7em;
-    }
-    
-    #design {
-        text-align: center;
-        /*border: 2px solid #000;*/
-        width: 100%;
-        height: 45px;
-        margin-left: 118px;
-        margin-top: -2px;
-        padding-top: 10px;
-    }
-    
-    #info{visibility: hidden;}
-    
-    #cca {
+    .flex-container {
         visibility: hidden;
+        overflow: hidden;}
+    
+    #href {
+        visibility: visible;
+        float: left;
+        margin: -25px 0 0 40px;
     }
     
-    #link {text-align: center;}
+    a {
+        text-decoration: none;
+        color: #cc0000;
+    }
 }
