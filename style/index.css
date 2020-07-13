@@ -1,5 +1,4 @@
-@media only screen and (max-width: 2000px) and (min-width: 1200px)  {
-    body {
+body {
         background-image: url("../images/addamshouse.jpg");
         background-size: cover;
     }
@@ -58,19 +57,15 @@
         height: 226px;
     }
     
-    #cca img {
-        width: 100px;
-        
-    }
-    
-    #href {visibility:hidden;}
-    
-    #link {margin-left: 1010px; margin-top: 100px;}
-    
-    
-    /* IMAGES */
-    
-    #cornerbox img {
-        width: 120px;
-    }
+#cca img {width: 100px;}
+
+#link {margin-left: 1010px; margin-top: 100px;}
+
+/* IMAGES */
+
+#cornerbox img {
+    width: 120px;
+}
+
+#href {visibility: hidden;}
 }
