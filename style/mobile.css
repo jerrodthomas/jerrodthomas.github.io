@@ -5,10 +5,11 @@
     }
     
     /* DIVS */
-    
+    div {visibility: hidden;}
     .flex-container {
         visibility: hidden;
         overflow: hidden;}
+    h1 {visibility: visible;}
     
     #href {
         visibility: visible;
