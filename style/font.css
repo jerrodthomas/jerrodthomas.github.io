@@ -19,6 +19,12 @@ body {
     font-family: 'Fredericka the Great', cursive;
     color: #5f0d0a;
 }
+
+h1 a {
+    text-decoration: none;
+    font-family: 'Fredericka the Great', cursive;
+    color: #5f0d0a;
+}
 /*
 font-family: 'Amatic SC', cursive;
 font-family: 'Fredericka the Great', cursive;
