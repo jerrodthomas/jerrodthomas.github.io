@@ -1,4 +1,4 @@
-@media screen and (min-device-width: 600px) and (max-device-width: 1920px) {
+@media screen and (min-device-width: 801px) and (max-device-width: 1920px) {
     body {
         width: 1280px;
         overflow: hidden;
@@ -56,7 +56,7 @@
     #title {padding-bottom: 25px; margin-left: 75px;}
 }
 
-@media screen and (min-device-width: 375px) and (max-device-width: 600px) {
+@media screen and (min-device-width: 375px) and (max-device-width: 800px) {
     body {
         width: 100%;
         overflow-x: hidden;
