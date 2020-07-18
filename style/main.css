@@ -1,0 +1,30 @@
+@media only screen and (max-width: 1280px) {
+body {width:1500px;}
+/* DIV */
+
+#daily {
+    width: 1425px;
+    border: 4px solid #000;
+    background-color: #00aeef;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+}
+
+/* DIV */
+
+.item1 {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1425px;
+}
+/* IMAGES */
+#funny {
+    float: right;
+    height: 200px;
+}
+
+#logo {height: 150px;}
+#title {padding-bottom: 25px; margin-left: 75px;}
+}
