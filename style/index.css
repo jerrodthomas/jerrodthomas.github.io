@@ -2,6 +2,7 @@
     body {
         width: 1280px;
         overflow: hidden;
+        color: #000;  
     }
     
     /* DIV */
@@ -96,6 +97,7 @@
         width: 125px;
         /*margin-right: auto;
         margin-left: -500px;*/
+        color: #000;
         
     }
 
