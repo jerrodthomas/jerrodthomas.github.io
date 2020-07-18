@@ -2,7 +2,6 @@
     body {
         width: 1280px;
         overflow: hidden;
-        color: #000;  
     }
     
     /* DIV */
@@ -25,6 +24,7 @@
         height: 625px;
         width: 315px;
         text-align: justify;
+        color: #000;
     }
 
     /* GRID */
@@ -36,6 +36,7 @@
         padding: 10px;
         width: 125px;
         margin-left: 15px;
+        color: #000;
         
         
     }
@@ -46,13 +47,9 @@
         width: 269px;
         margin-top: -25px;
         height: 250px;
+        color: #000;
     }
-
-
-    iframe {
-        margin-left: -100px;
-    }
-
+    
     /* IMAGES */
 
     #logo {height: 150px;}
@@ -63,6 +60,7 @@
     body {
         width: 100%;
         overflow-x: hidden;
+        color: #000;
     }
     
     /* DIV */
@@ -97,7 +95,6 @@
         width: 125px;
         /*margin-right: auto;
         margin-left: -500px;*/
-        color: #000;
         
     }
 
@@ -108,13 +105,8 @@
         margin-top: -25px;
         height: 275px;
     }
-
-
-    iframe {
-        margin-left: -100px;
-    }
-
-    /* IMAGES */
+    
+    * IMAGES */
 
     #logo {height: 150px;}
     #title {padding-bottom: 25px; margin-left: 75px;}
