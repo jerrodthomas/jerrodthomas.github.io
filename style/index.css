@@ -1,71 +1,44 @@
-body {
-        background-image: url("../images/addamshouse.jpg");
-        background-size: cover;
-    }
-    
-    /* DIVS */
-    
-    .flex-container {
-        /*display: flex;*/
-        background-color: #cc0000;
-        width: 100%;
-        height: 55px;
-        border-top: 2px solid #000;
-        border-bottom: 2px solid #000;
-    }
-    
-    .flex-container > div {
-        /*background-color: #f1f1f1;*/
-        margin: 10px;
-        /*padding: 20px;
-        font-size: 30px;*/
-    }
-    
-    i {
-        font-style: none;
-        font-size: 1.7em;
-    }
-    #design {
-        text-align: center;
-        /*border: 2px solid #000;*/
-        width: 1285px;
-        height: 45px;
-        margin-left: 118px;
-        margin-top: -2px;
-        padding-top: 10px;
-    }
-    
-    #info {
-        background-color: #fff;
-        color: #000;
-        font-size: 1em;
-        float: left;
-        margin-top: -2px;
-        margin-left: -5px;
-        height: 55px;
-        width: 120px;
-        border: 2px solid #000;
-        font-weight: bolder;
-        text-align: center;
-    }
-    
-    #cca {
-        float: right;
-        margin-right: 10px;
-        margin-top: -75px;
-        width: 100px;
-        height: 226px;
-    }
-    
-#cca img {width: 100px;}
+body {width:1500px;}
+/* DIV */
 
-#link {margin-left: 1010px; margin-top: 100px;}
+#daily {
+    width: 1425px;
+    border: 4px solid #000;
+    background-color: #00aeef;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+}
+
+.item1 {
+    background-color: yellow;
+    border: 2px solid #000;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 10px 10px;
+    height: 625px;
+    text-align: justify;
+}
+
+/* GRID */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 650px auto;
+    grid-gap: 10px;
+    padding: 10px;
+    width: 1425px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.grid-container > div:not(.item1) {
+    text-align: justify;
+    padding: 20px 10px;
+    width: 328px;
+}
 
 /* IMAGES */
 
-#cornerbox img {
-    width: 120px;
-}
-
-#href {visibility: hidden;}
-}
+#logo {height: 150px;}
+#title {padding-bottom: 25px; margin-left: 75px;}
