@@ -1,0 +1,206 @@
+@media only screen and (min-width: 1024px) {
+    * { box-sizing: border-box;}
+    
+    /* BODY */
+
+    body {
+                    background-color: #1b03a3;
+                    color: #000;
+    }
+
+    /* NAVIGATION */
+
+    nav {           
+                    text-align: center;
+                    padding-bottom: 1px;
+                    font-size: 1.3em;
+    }
+
+    nav ul li {
+                    display: inline;
+                    list-style-type: none;
+    }
+
+    a {
+                    text-decoration: none;
+                    color: #ff69b4;
+    }
+
+    a:hover:not(.active) {       
+                    color: #ff69b4;
+    }
+
+    a:visited {
+                    color: #fff;
+    }
+
+    .active {
+                    color: #ec3699;
+                    font-weight: bolder;
+    }
+
+    /* WRAPPER */
+
+    #wrapper {
+                    width: 93%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    background-color: #fff;
+                    padding: 10px 15px 5px 15px;
+                    border-radius: 8px;
+                    border: 3px solid #ff69b4;
+                    text-align: justify;
+    }
+
+    /* MISC */
+
+    #quote {
+                    float: left;
+                    background-color: #fff;
+                    border: 3px solid #ff69b4;
+                    border-radius: 7px;
+                    color: #000;
+                    margin: 25px 0 0 25px;
+                    width: 175px;
+                    padding: 0 7px 0 7px;
+                    box-shadow: 3px 3px #000;
+    }
+
+    span {          font-weight: bold; 
+         }
+
+    section ul {     list-style-image: url('../images/bullet.png');
+               }
+    
+    /* IMAGES */
+
+    #banner {
+                    height: 100px;
+                    margin-left: 50px;
+    }
+
+    figure {
+                    margin-left: 35%;
+    }
+
+    figcaption {
+                    width: 308px;
+                    text-align: center;
+    }
+
+    #hero {         border-radius: 7px;
+    }
+
+    /* HEADER */
+
+    header {
+                    width: 93%;
+                    margin-left: auto;
+                    margin-right: auto;
+    }
+
+    header h1 {
+                    margin-left: 200px;
+                    margin-top: -38px;
+                    color: #fff;
+                    text-transform: uppercase;
+
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    body {
+                    background-color: #1b03a3;
+                    color: #000;
+         }
+
+    /* NAVIGATION */
+
+    nav {           
+                    text-align: center;
+                    padding-bottom: 1px;
+                    font-size: 1.3em;
+        }
+
+    nav ul li {
+                    display: inline;
+                    list-style-type: none;
+              }
+
+    a {
+                    text-decoration: none;
+                    color: #ff69b4;
+      }
+
+    a:hover:not(.active) {       
+                    color: #ff69b4;
+                         }
+
+    a:visited {
+                    color: #fff;
+              }
+
+    .active {
+                    color: #ec3699;
+                    font-weight: bolder;
+            }
+    
+    /* HEADER */
+
+    header {
+                    width: 93%;
+                    margin-left: auto;
+                    margin-right: auto;
+            }
+    
+    header h1 {
+                    color: #fff;
+                    width: 100%;
+                    text-align: center;
+                    text-transform: capitalize;
+    }
+    /* MISC */
+    
+    #quote {
+                    display: none;
+           }
+    
+    span {          font-weight: bold; 
+         }
+
+    section ul {     list-style-image: url('../images/bullet.png');
+               }
+    
+    #wrapper {
+                    width: 93%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    background-color: #fff;
+                    padding: 10px 15px 5px 15px;
+                    border-radius: 8px;
+                    border: 3px solid #ff69b4;
+                    text-align: justify;
+    }
+
+
+    /* IMAGES */
+    
+    #banner {
+                    display: none;
+    }
+    
+    figure {
+                    margin-left: 35%;
+    }
+
+    figcaption {
+                    width: 308px;
+                    text-align: center;
+    }
+
+    #hero {         border-radius: 7px;
+    }
+
+}
+
