@@ -64,7 +64,7 @@
                     width: 175px;
                     padding: 0 7px 0 7px;
                     box-shadow: 3px 3px #000;
-    }
+            }
 
     span {          font-weight: bold; 
          }
@@ -77,19 +77,19 @@
     #banner {
                     height: 100px;
                     margin-left: 50px;
-    }
+            }
 
     figure {
                     margin-left: 35%;
-    }
+           }
 
     figcaption {
                     width: 308px;
                     text-align: center;
-    }
+               }
 
     #hero {         border-radius: 7px;
-    }
+          }
 
     /* HEADER */
 
@@ -97,7 +97,7 @@
                     width: 93%;
                     margin-left: auto;
                     margin-right: auto;
-    }
+           }
 
     header h1 {
                     margin-left: 200px;
@@ -105,7 +105,10 @@
                     color: #fff;
                     text-transform: uppercase;
 
-    }
+               }
+    
+    header h4 {     display: none; 
+              }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -155,11 +158,9 @@
             }
     
     header h1 {
-                    color: #fff;
-                    width: 100%;
-                    text-align: center;
-                    text-transform: capitalize;
-    }
+                    display: none;
+              }
+    
     /* MISC */
     
     #quote {
