@@ -3,25 +3,50 @@
     <head>
         <meta charset="utf-8">
         <title>Tim's  Corner</title>
-        <link rel="icon" href="https://jerrodthomas.github.io/1989.png" type="image/x-icon">
-        <link rel="stylesheet" href="/styles/main.css" type="text/css">
-		<link rel="stylesheet" href="/styles/gallery.css" type="text/css">
+        <link rel="icon" href="images/1989.png" type="image/x-icon">
+        <link rel="stylesheet" href="style/main.css" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
 		<style>
 		img {height:250px;}
 		.gallery {background-color: #000;}
+		ul {
+		list-style-type: none;
+		margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: yellow;
+		}
+
+		li {
+		  float: left;
+		}
+
+		li a {
+		  display: block;
+		  color: #000;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+
+		li a:hover:not(.active) {
+		  background-color: red;
+		}
+
+		.active {
+		  background-color: #04AA6D;
+		}
 		</style>
     </head>
     <body id="art">
         <header>
-			<nav>
-			   <ul>
-						<li><a href="#" class="active">home</a></li>
-						<li><a href="art.html">artwork</a></li>
-						<li><a href="stories.html">stories</a></li>
-						<li><a href="contact.html">contact</a></li>
-					</ul>
-            </nav>
+			<ul>
+				<li><a href="index.html">home</a></li>
+				<li><a href="#"  class="active">artwork</a></li>
+				<li><a href="stories.html">stories</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+            
 		</header>
 		<section id="artwork">
             <h1>ARTWORK</h1>
