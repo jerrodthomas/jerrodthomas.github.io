@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <title>Tim's  Corner</title>
         <link rel="icon" href="images/1989.png" type="image/x-icon">
         <link rel="stylesheet" href="style/main.css" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
 		<style>
-			body {background-color: #fff;}
-		img {height:250px;}
-		.gallery {background-color: #000;}
-		ul {
-		list-style-type: none;
-		margin: 0;
-		  padding: 0;
-		  overflow: hidden;
-		  background-color: yellow;
-		}
+            @media only screen and (max-width: 1024px) {
+                body {background-color: #fff;}
+                img {height:250px;}
+                .gallery {background-color: #000;}
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: yellow;
+                }
 
-		li {
-		  float: left;
-		}
+                li {float: left;}
 
-		li a {
-		  display: block;
-		  color: #000;
-		  text-align: center;
-		  padding: 14px 16px;
-		  text-decoration: none;
-		}
-
-		li a:hover:not(.active) {
-		  background-color: red;
-		}
-
-		.active {
-		  background-color: #04AA6D;
-		}
+                li a {
+                    display: block;
+                    color: #000;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+                
+                li a:hover:not(.active) {
+                    background-color: red;
+                }
+                
+                .active {background-color: #04AA6D;}
+            }
 		</style>
     </head>
     <body id="art">
@@ -165,6 +164,5 @@
 			<img src="110.jpg">
 			<img src="111.jpg">
 		</section>
-		
-  </body>
+    </body>
 </html>
