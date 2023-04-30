@@ -1,4 +1,4 @@
- @media only screen and (max-width: 600px) and (min-width: 300px) {
+ @media only screen and (max-width: 400px) {
             body {background-color: #000;}
             .wide {width: 100%;}
             .tall {width: 50%;}
