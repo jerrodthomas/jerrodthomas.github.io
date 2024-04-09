@@ -4,6 +4,9 @@
   		<meta name="viewport" content="width=device-width">
 		<title>My Stuff</title>
 		<style>
+			.arte {display: block;
+  margin-left: auto;
+  margin-right: auto;}
             ul {
                 list-style-type: none;
                 margin: 0;
@@ -55,60 +58,187 @@
                     display: block;
                 }
             .upper {text-transform: uppercase;}
+			
+			.hug{text-decoration: underline;}
+			/* By Boujjou Achraf*/
+
+/*basic reset */
+            
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {background: black;}
+            canvas {display:block;}
         </style>
-        
+        <script>// geting canvas by Boujjou Achraf
+        var c = document.getElementById("c");
+        var ctx = c.getContext("2d");
+
+        //making the canvas full screen
+        c.height = window.innerHeight;
+        c.width = window.innerWidth;
+
+        //chinese characters - taken from the unicode charset
+        var matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+        //converting the string into an array of single characters
+        matrix = matrix.split("");
+
+        var font_size = 10;
+        var columns = c.width/font_size; //number of columns for the rain
+        //an array of drops - one per column
+        var drops = [];
+        //x below is the x coordinate
+        //1 = y co-ordinate of the drop(same for every drop initially)
+        for(var x = 0; x < columns; x++)
+            drops[x] = 1; 
+
+        //drawing the characters
+        function draw()
+        {
+            //Black BG for the canvas
+            //translucent BG to show trail
+            ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
+            ctx.fillRect(0, 0, c.width, c.height);
+
+            ctx.fillStyle = "#f4427d";//green text
+            ctx.font = font_size + "px arial";
+            //looping over drops
+            for(var i = 0; i < drops.length; i++)
+            {
+                //a random chinese character to print
+                var text = matrix[Math.floor(Math.random()*matrix.length)];
+                //x = i*font_size, y = value of drops[i]*font_size
+                ctx.fillText(text, i*font_size, drops[i]*font_size);
+
+                //sending the drop back to the top randomly after it has crossed the screen
+                //adding a randomness to the reset to make the drops scattered on the Y axis
+                if(drops[i]*font_size > c.height && Math.random() > 0.975)
+                    drops[i] = 0;
+
+                //incrementing Y coordinate
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 35);
+</script>
 	</head>
 	<body>
+	
         <ul>
-            <li class="upper"><a href="file:///C:/Users/Jerrod/OneDrive/Documents/index.html">Home</a></li>
-            <li  class="dropdown upper">
+		<li  class="dropdown upper">
+                <a href="javascript:void(0)" class="dropbtn">Audible</a>
+                <div class="dropdown-content">/
+                    <a href="https://www.audible.com/webplayer?asin=B008VUWW3O&contentDeliveryType=SinglePartBook&ref_=a_libraryItem_cloudplayer_B008VUWW3O&overrideLph=false&initialCPLaunch=true" target="audible">Founding Fathers Guide to the Constitution</a>
+                    <a href="https://www.audible.com/webplayer?asin=B002V1OE3A&contentDeliveryType=MultiPartBook&ref_=a_libraryItem_cloudplayer_B002V1OE3A&overrideLph=false&initialCPLaunch=true" target="audible">Poilitcally Incorect Guide to the Founding Fathers</a>
+                    <a href="https://www.audible.com/webplayer?asin=B01H29ED18&contentDeliveryType=SinglePartBook&ref_=a_libraryItem_cloudplayer_B01H29ED18&overrideLph=false&initialCPLaunch=true" target="audible">Warren Book 1: Graveyard</a>
+                    <a href="https://www.audible.com/webplayer?asin=B06ZZPQ3ST&contentDeliveryType=SinglePartBook&ref_=a_libraryItem_cloudplayer_B06ZZPQ3ST&overrideLph=false&initialCPLaunch=true" target="audible">Warren Book 5: Werewolf</a>
+                    <a href="https://www.audible.com/webplayer?asin=B0753LHWHN&contentDeliveryType=SinglePartBook&ref_=a_libraryItem_cloudplayer_B0753LHWHN&overrideLph=false&initialCPLaunch=true" target="audible">From Here to Eternity</a>
+                    <a href="https://www.audible.com/webplayer?asin=B015TVHUA2&contentDeliveryType=SinglePartBook&ref_=a_libraryItem_cloudplayer_B015TVHUA2&overrideLph=false&initialCPLaunch=true" target="audible">Extreme Ownership</a>
+                    <a href="https://www.audible.com/webplayer?asin=B078PNTRRP&contentDeliveryType=MultiPartBook&ref_=a_libraryItem_cloudplayer_B078PNTRRP&overrideLph=false&initialCPLaunch=true" target="audible">Joseph Smith: Rough Stone Rolling</a>
+                    <a href="https://www.audible.com/webplayer?asin=B079K46KK5&contentDeliveryType=MultiPartBook&ref_=a_libraryItem_cloudplayer_B079K46KK5&overrideLph=false&initialCPLaunch=true" target="audible">Complete Edgar Allen Poe</a>
+					<a href="https://www.audible.com/webplayer?asin=1250242819&contentDeliveryType=MultiPartBook&ref_=a_libraryItem_cloudplayer_1250242819&overrideLph=false&initialCPLaunch=true" target="audible">The Amazing Story of Stan Lee</a>
+					<a href="https://www.audible.com/webplayer?asin=B00GHO4VP8&contentDeliveryType=SinglePartBook&ref_=a_libraryItem_cloudplayer_B00GHO4VP8&overrideLph=false&initialCPLaunch=true" target="audible">Logic: A Very Short Introduction</a>
+					<a href="https://www.audible.com/webplayer?asin=B00MNQKYNC&contentDeliveryType=MultiPartBook&ref_=a_libraryItem_cloudplayer_B00MNQKYNC&overrideLph=false&initialCPLaunch=true" target="audible">Necronomicon</a>
+					<a href="https://www.audible.com/webplayer?asin=B00FQRCM9O&contentDeliveryType=SinglePartBook&ref_=a_libraryItem_cloudplayer_B00FQRCM9O&overrideLph=false&initialCPLaunch=true" target="audible">Frankenstein</a>
+					<a href="https://www.audible.com/webplayer?asin=B019WPM4ZM&contentDeliveryType=MultiPartBook&ref_=a_libraryItem_cloudplayer_B019WPM4ZM&overrideLph=false&initialCPLaunch=true" target="audible">It</a>
+					<a href="https://www.audible.com/webplayer?asin=B07D7YG12C&contentDeliveryType=MultiPartBook&ref_=a_libraryItem_cloudplayer_B07D7YG12C&overrideLph=false&initialCPLaunch=true" target="audible">Chesty Puller</a>
+					<a href="https://www.audible.com/webplayer?asin=1541404769&contentDeliveryType=SinglePartBook&ref_=a_libraryItem_cloudplayer_1541404769&overrideLph=false&initialCPLaunch=true" target="audible">Mastering Logical Fallacies</a>
+					<a href="https://www.audible.com/webplayer?asin=B07NBNMDCK&contentDeliveryType=SinglePartBook&ref_=a_libraryItem_cloudplayer_B07NBNMDCK&overrideLph=false&initialCPLaunch=true" target="audible">How to Analyze People:</a>
+					<a href="https://www.audible.com/webplayer?asin=B002V5CHR6&contentDeliveryType=SinglePartBook&ref_=a_libraryItem_cloudplayer_B002V5CHR6&overrideLph=false&initialCPLaunch=true" target="audible">When Pride Still Mattered</a>
+					<a href="https://www.audible.com/webplayer?asin=B002V8MSM2&contentDeliveryType=SinglePartBook&ref_=a_libraryItem_cloudplayer_B002V8MSM2&overrideLph=false&initialCPLaunch=true" target="audible">Conversational Klingon</a>
+					</div>
+            </li>
+		<li  class="dropdown upper">
                 <a href="javascript:void(0)" class="dropbtn">Bills</a>
                 <div class="dropdown-content">
                     <a href="https://cherryhillproperties.appfolio.com/connect/" target="rent">Rent</a>
                     <a href="https://www.att.com/acctmgmt/accountoverview?haloSuccess=true&lt=ckZkdmwzKTFtXWJmbXhgSm4tJ3J3TGlTYV0oVTd9TU5WSXNGJ2wzSTpUXzlwXFxDZzxJWHg4WG0jZ3lPST85Jw%3D%3D" target="midco">Internet</a>
                     <a href="https://www.myfamilymobile.com/" target="phone">Phone</a>
                     <a href="https://secure.walmartmoneycard.com/account/account-dashboard/" target="bank">Walmart Money Card</a>
+					<a href="https://www.aetnacvshealth.com/" target="aetna">Health Insurance</a>
+					<a href="https://www.google.com/android/find/" target="find">Find Phone</a>
                 </div>
             </li>
-            <li class="upper"><a href="https://mail.google.com/mail/u/0/#inbox" target="mail">E-Mail</a></li>
-            <li class="dropdown upper">
+			<li  class="dropdown upper">
+                <a href="javascript:void(0)" class="dropbtn">Comics</a>
+                <div class="dropdown-content">/
+                    <a href="https://www.gamesradar.com/newsarama/" target="stuff">newsarama</a>
+                    <a href="https://www.penciljack.com/forum/laboratories/sequential-art" target="ebay">Pencil Jack</a>
+                    <a href="https://www.comicsexperience.com/scripts/" target="script">Scripts</a>
+                    <a href="https://leagueofcomicgeeks.com/dashboard" target="geek">League of Comic Book Geeka</a>
+                    <a href="https://www.chopscomics.com/" target="streaming">Chops</a>
+                    <a href="https://www.deviantart.com/" target="streaming">Devianta Art+</a>
+                    <a href="https://www.dirkmanning.com/" target="chtulu">Dirk Manning</a>
+                    <a href="https://theetheringtonbrothers.blogspot.com/p/every-how-to-think-when-you-draw.html" target="bulldogs">Drawing 1</a>
+					<a href="https://planetcomicon.com/" target="planet">Planet Comicon</a>
+					<a href="https://coreyanders.github.io/index.html" target="corey">Corey Ander</a>
+					</div>
+            </li>
+			<li  class="dropdown upper">
+                <a href="javascript:void(0)" class="dropbtn">Genealogy</a>
+                <div class="dropdown-content">/
+                    <a href="https://www.findagrave.com/" target="family">Findagrave</a>
+					<a href="https://www.familysearch.org/en/united-states/" target="family">Family Search</a>
+                    <a href="https://www.ancestry.com/" target="family">Ancestry</a>
+					</div>
+            </li>
+			<li  class="dropdown upper">
+                <a href="javascript:void(0)" class="dropbtn">Mail</a>
+                <div class="dropdown-content">/
+                    <a href="https://mail.google.com/mail/u/0/#inbox" target="email">E-mail</a>
+                    <a href="https://reg.usps.com/entreg/LoginAction_input?app=RMIN&appURL=https%3A%2F%2Finformeddelivery.usps.com%2Fbox%2Fpages%2Fsecure%2FDashboardAction_input.action" target="usps">Informed Delivery</a>
+                </div>
+				<li class="dropdown upper">
                 <a href="javascript:void(0)" class="dropbtn">School</a>
                 <div class="dropdown-content">
                     <a href="https://canvas.jccc.edu/" target="jccc">Canvas</a>
                     <a href="https://lum-prod.ec.jccc.edu/" target="jccc">My JCCC</a><br>
                 </div>
             </li>
-		<li class="dropdown upper">
-                <a href="javascript:void(0)" class="dropbtn">Facebook</a>
+			<li class="dropdown upper">
+                <a href="javascript:void(0)" class="dropbtn">Social</a>
                 <div class="dropdown-content">
                     <a href="https://www.facebook.com/" target="face">Facebook</a>
                     <a href="https://www.messenger.com/t/618352571" target="jccc">Messenger</a>
-			<a href="https://web.snapchat.com/8b70a7a3-4f03-5ff6-8d33-c69cf50b14df">Snapchat</a>
+			<a href="https://web.snapchat.com/8b70a7a3-4f03-5ff6-8d33-c69cf50b14df" target="snap">Snapchat</a>
                 </div>
             </li>
-            <li class="upper"><a href="https://www.google.com/" target="google">Google</a></li>
+            <li  class="dropdown upper">
+                <a href="javascript:void(0)" class="dropbtn">Shopping</a>
+                <div class="dropdown-content">/
+                    <a href="https://www.amazon.com/" target="stuff">Amazon</a>
+                    <a href="https://www.ebay.com/" target="ebay">Ebay</a>
+                    </div>
+            </li>
             <li  class="dropdown upper">
                 <a href="javascript:void(0)" class="dropbtn">Streaming</a>
-                <div class="dropdown-content">/
+                <div class="dropdown-content">
+				<a href="https://streamdb9web.securenetsystems.net/ce/KSNP&" target="dawg">97.7 the Dawg</a>
+				<a href="https://www.audacy.com/stations/989therock">98.9 the Rock</a>
+				<a href="https://www.101thefox.net/#" target="fox">101.1 ther Fox</a>
+					<a href="https://www.ksvptv.com/" target="bulldogs">Artesia</a>
+					<a href="https://youtu.be/I8C_JaT8Lvg" target="brave">Brave Little Toaster</a>
+					<a href="https://www.disneyplus.com/account-hold" target="streaming">Disney+</a>
+					<a href="https://www.discoveryplus.com/" target="discovery">Discovery</a>
+					<a href="https://watch.frndlytv.com/guide" target="streaming">frndlytv</a>
                     <a href="https://play.max.com/home" target="streaming">HBO</a>
                     <a href="https://www.hulu.com/hub/home/" target="streaming">Hulu</a>
-                    <a href="https://www.disneyplus.com/account-hold" target="streaming">Disney+</a>
-                    <a href="https://watch.frndlytv.com/guide" target="streaming">frndlytv</a>
+                    <a href="https://archive.org/details/marx_brothers_202101/Marx+Brothers/Marx+Brothers+%5B1929%5D+The+Cocoanuts.mkv" taraget="marx">Marx Brothers Movies</a>
                     <a href="https://www.netflix.com/browse" target="streaming">Netflix</a>
                     <a href="https://www.paramountplus.com/home/" target="streaming">Paramount+</a>
+					<a href="https://www.amazon.com/gp/video/offers/intercept?ref=DVM_US_DL_SL_GO_BRSA_mkw_sfx5Xv4Gz-dc&mrntrk=pcrid_448130500925_slid__pgrid_29008589832_pgeo_1017537_x__adext__ptid_kwd-296527732991" target="prime">Prime</a>
                     <a href="https://www.screambox.com/">Screambox</a>
                     <a href="https://www.youtube.com/" target="tube">YouTube</a>
-			<a href="https://streamdb9web.securenetsystems.net/ce/KSNP&" target="dawg">97.7 the Dawg</a>
-			<a href="https://www.101thefox.net/#" target="fox">101.1 ther Fox</a>
-			<a href="https://archive.org/details/marx_brothers_202101/Marx+Brothers/Marx+Brothers+%5B1929%5D+The+Cocoanuts.mkv" taraget="marx">Marx Brothers Movies</a>
-			<a href="https://youtu.be/I8C_JaT8Lvg" target="brave">Brave Little Toaster</a>
-			<a href="https://www.ksvptv.com/" target="bulldogs">Artesia</a>
-                </div>
+					<a href="https://www.amazon.com/Ed-Gein-Steve-Railsback/dp/B001GS4N26#:~:text=Watch%20Ed%20Gein%20%7C%20Prime%20Video" target="gein">Ed Gein</a>
+					
+					
+					
+					</div>
             </li>
-		<li class="upper"><a href="https://github.com/jerrodthomas/jerrodthomas.github.io" target="hub">Github</a></li>
-            <li class="upper"><a href="https://www.thingiverse.com/" target="thing">Thingiverse</a></li>
-		<li class="upper"><a href="https://m.facebook.com/wifiauth/login/?gw_id=410470355778097&redirect_url=https%3A%2F%2Fn257.network-auth.com%2Fsplash%2Ffb_auth%3Fref_id%3D65&redirect_mac=PiwrK8mxbl9-THKvpKUlOHz4MYl9R7M6u0NQBuDjIc4" target="checkers">Checkers</a></li>
-            <li class="dropdown upper">
+			<li class="dropdown upper">
                 <a href="javascript:void(0)" class="dropbtn">Zoom</a>
                 <div class="dropdown-content">
                     <a href="https://zoom.us/j/94794300928?pwd=a3BPWUdZT0tNeS9xeG9DRmhsVUJLQT09" target="zoom">Priesthood</a>
@@ -116,8 +246,15 @@
                     <a href="https://zoom.us/j/9041419610?pwd=eUJOc0c2allvQzNUU1JTTnIyLzlyUT09" target="zoom">10 Forward</a>
                     <a href="https://zoom.us/j/9041419610?pwd=eUJOc0c2allvQzNUU1JTTnIyLzlyUT09" target="zoom">Chapter Meeting</a>
                     <a href="https://us02web.zoom.us/j/81186865886?pwd=b3hXMDU0aG5Cc3NaYnA5QnAxS1FUZz09&fbclid=IwAR2gdjzFp3n__U45TW0GrcE-RthljKsn0bWm1LHvxoVEO-v7ImvzzINFR48" target="zoom">R12 rivia</a>
+					<a href="https://zoom.us/j/97259883531?pwd=cFIzcGJIT29GWmYrSUdUUDFvM2ZmUT09" target="business">Self-Reliance</a>
                 </div>
             </li>
+			
+			
+			
+			
         </ul>
+		<canvas id="c">d</canvas><li class="upper"><a href="https://github.com/jerrodthomas/jerrodthomas.github.io" target="hub" class="hub">Github</a></li>
+		<img src="art.png" class="arte">
     </body>
 </html>
