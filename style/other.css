@@ -1,0 +1,52 @@
+@media only screen and (min-width: 700px) {
+    div.gallery img {
+        width: 100%;
+        display: block;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    div.desc {
+        padding: 15px;
+        text-align: center;
+        color: #34f9fe;
+        font-size: 24px;
+        font-weight: bolder;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .responsive {
+        padding: 0 6px;
+        float: right;
+        width: 24.99999%;
+        /*margin-left: 15px;*/
+    }
+    
+    .small {display: none;}
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+        display: none;
+    }
+    .pot {display: none;}
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+            
+.issue {color: #f11712; margin-left: 15px; font-size: 10px;}
+h1 {color: #f11712; margin-left: 15px;}
+h2 {font-size: 20px;}
+h3 {color: #f11712; font-size: 20px;}
+ul {list-style-type: none; }
+ol {list-style-type: none; }
