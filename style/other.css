@@ -31,5 +31,5 @@
 }
 
 @media only screen and (max-width: 500px) {
-    #band {width: 50%}
+    #band {width: 50% height: auto;}
 	}
