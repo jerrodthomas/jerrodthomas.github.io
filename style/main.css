@@ -35,14 +35,25 @@ p {
             
 b {
     font-weight: bolder;
-    color: #ff4500;
-    text-shadow: -2px -1px #000;
-	font-size: 22px;
+    font-size: 22px;
+}
+
+.places {
+    margin-left: 10px;
+}
+
+.places a {
+    color: olivedrab;
+    font-weight: bolder;
+}
+
+.places a:visited {
+    color: olivedrab;
 }
 
 /* IMAGES */
 
-img {
+img not(#band){
     height: 250px;
     display: flex;
     margin-left: auto;
