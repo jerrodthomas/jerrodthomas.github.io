@@ -35,4 +35,4 @@
     .active {background-color: #ff4500; color: #000;}
     #hamburger ul a {text-decoration: none;}
     )
-    
+    #menu {display: hidden; visibility: none;}
