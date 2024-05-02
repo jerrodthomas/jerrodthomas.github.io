@@ -31,7 +31,7 @@
     .places a {text-decoration: none;}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
     #hamburger ul {list-style-type: none;}
     .active {background-color: #ff4500; color: #000;}
     #hamburger ul a {text-decoration: none;}
