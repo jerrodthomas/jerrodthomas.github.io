@@ -7,16 +7,6 @@
         <link href='./style/other.css' rel='stylesheet' type='text/css'>
         <link href="./style/nav.css" rel="stylesheet" type='text/css'>
         <link href="./style/small.css" rel="stylesheet" type='text/css'>
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myLinks");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-            }
-        </script>
         <title>
             Jens Nielsen Jensen
         </title>
@@ -36,20 +26,21 @@
             <a href="https://home.rootsweb.com/" target="family">rootsweb</a>
             <a href="https://locations.familysearch.org/en/search" target="family">Get Help</a>
         </div>
-        <div class="topnav" id="hamburger">
-            <a href="index.html">home</a>
-            <div id="myLinks">
-                <a href="mailto:jerrod.thomas0@gmail.com">contact</a>
-                <a href="bio.html" class="active">biographies</a>
-                <a href="places.html">places</a>
-                <a href="images.html">images</a>
-                <a href="https://www.familysearch.org/" target="family">familysearch</a>
-                <a href="https://www.ancestry.com/?o_xid=115784&o_lid=115784&o_sch=Paid+Search+Brand&ancid=4vmopenrg0&ds_rl=1286410&pgrid=120522386862&ptaid=aud-1878812933500%3Akwd-29052520&s_kwcid=ancestry&gad_source=1&gclid=Cj0KCQjw_qexBhCoARIsAFgBlevwl6OPLYBMLSYO4JHB7VYKZTJZDsDl0jfmAQQdzC7ThYumN34EIFcaAuglEALw_wcB&gclsrc=aw.ds" target="family">ancestry</a>
-                <a href="https://www.findagrave.com/" target="family">findagrave</a>
-                <a href="https://www.ancquest.com/index.htm" target="family">ancestryquest</a>
-                <a href="https://home.rootsweb.com/" target="family">rootsweb</a>
-                <a href="https://locations.familysearch.org/en/search" target="family">Get Help</a>
-            </div>
+        <div id="hamburger">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="mailto:jerrod.thomas0@gmail.com">contact</a></li>
+                <li><a href="bio.html" class="active">biographies</a></li>
+                <li><a href="places.html">places</a></li>
+                <li><a href="images.html">images</a></li>
+                <li><a href="https://www.familysearch.org/" target="family">familysearch</a></li>
+                <li><a href="https://www.ancestry.com/?o_xid=115784&o_lid=115784&o_sch=Paid+Search+Brand&ancid=4vmopenrg0&ds_rl=1286410&pgrid=120522386862&ptaid=aud-1878812933500%3Akwd-29052520&s_kwcid=ancestry&gad_source=1&gclid=Cj0KCQjw_qexBhCoARIsAFgBlevwl6OPLYBMLSYO4JHB7VYKZTJZDsDl0jfmAQQdzC7ThYumN34EIFcaAuglEALw_wcB&gclsrc=aw.ds" target="family">ancestry</a></li>
+                <li><a href="https://www.findagrave.com/" target="family">findagrave</a></li>
+                <li><a href="https://www.ancquest.com/index.htm" target="family">ancestryquest</a></li>
+                <li><a href="https://home.rootsweb.com/" target="family">rootsweb</a></li>
+                <li><a href="https://locations.familysearch.org/en/search" target="family">get help</a></li>
+            </ul>
+        </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
