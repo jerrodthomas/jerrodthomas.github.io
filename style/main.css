@@ -7,21 +7,22 @@ body {
     text-justify: inter-word;
 }
 
-h2 {text-align: center;}
+h2 {
+    width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 p {
     padding: 0 10px 0 10px;
 }
 
-/* IMAGES */
-
-img {height: 250px;}
-
-.right {float: right; padding-left: 15px;}
-.left {float: left; padding-right: 15px;}
-
-.lambert {text-align: center; font-weight: bolder;}
+.lambert {
+    text-align: center;
+    font-weight: bolder;
+}
 
 .text a {
     text-decoration-color: orangered;
@@ -36,4 +37,46 @@ b {
     font-weight: bolder;
     color: #ff4500;
     text-shadow: -2px -1px #000;
+	font-size: 22px;
+}
+
+/* IMAGES */
+
+img {
+    height: 250px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right {
+    float: right;
+    padding-left: 15px;
+}
+
+.left {
+    float: left; 
+    padding-right: 15px;
+}
+
+.center {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.thelma {
+    display: flex;
+    float: left;
+    padding-right: 10px;
+}
+
+.morgan {
+    display: flex;
+    float: right;
+    padding-left: 10px;
+}
+
+iframe {
+    /*width: 560px;*/
+    height: 315px;
 }
