@@ -31,41 +31,8 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .mobile-container {
-        max-width: 480px;
-        margin: auto;
-        background-color: #fff;
-        height: 500px;
-        color: #000;
-        border-radius: 10px;
-    }
-    
-    .topnav {
-        overflow: hidden;
-        background-color: #fff;
-        position: relative;
-    }
-    
-    .topnav #myLinks {display: none;}
-    
-    .topnav a {
-        color: #ff4500;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-    }
-    
-    .topnav a.icon {
-        background: #ff4500;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    
-    .topnav a:hover {background-color: #ddd; color: black;}
-    
-    .active {background-color: #000; color: #ff4500;}
+    #hamburger ul {list-style-type: none;}
+    .active {background-color: #ff4500; color: #000;}
+    #hamburger ul a {text-decoration: none;}
     )
     
