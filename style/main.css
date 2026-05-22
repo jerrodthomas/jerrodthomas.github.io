@@ -1,93 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kristi&family=Monsieur+La+Doulaise&family=UnifrakturCook:wght@700&display=swap');
+
 body {
-    font-family: "Special Elite", system-ui;
-    font-style: normal;
-    background-color: #fff;
-    text-align: justify;
-    text-justify: inter-word;
+  font-family: "EB Garamond", serif;
+  background-color: #fdfbf7;
+  overflow: hidden;
+}
+
+/*div:not(.bio, .author, .sources) {box-shadow: 5px 10px #000;}*/
+
+.title {
+  font-family: "Monsieur La Doulaise", cursive;
+  color: #2c3539;
+  margin-top: 5px;
+  padding-top: 5px;
+  font-size: 48px;
 }
 
 h2 {
-    width: 500px;
-    text-align: center;
+  font-family: "EB Garamond", serif;
+  font-weight: bolder;
+  position: relative;
+  margin-top: -30px;
+  color: #fff8dc;
+  font-size: 2.8em;
+  border-radius: 15px;
+  /*background-image: repeating-conic-gradient(#dc143c 0deg 10deg, #ffd500 10deg 20deg, #2a97fd 20deg 30deg);*/
+  background-image: url(untitled.jpg);
+  padding-bottom: 5px;
+}
+
+.title, h2 {
+  text-align: center;
+}
+
+sup {color: #cc101f;}
+
+#mike {
+  width: 900px; height: 224px;
+  color: #2c3539;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
+}
+
+a {
+  color: #2c3539;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:visited {
+  color: #2c3539;
+  
+}
+
+a:hover {
+  color: #cc101f;
+  font-weight: bolder;
+  text-decoration: underline;
+  text-decoration-color: #2c3539;
+}
+
+.sources {
+  text-align: center;
+  border: 3px solid #2c3539;
+  background-color: #f5fffa;
+  border-radius: 50px;
+  margin-top: -75px;
+  width: 75%;
     margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
+}
+ol {
+  text-align: left;
+  
 }
 
-
-p {
-    padding: 0 10px 0 10px;
+.details {
+  font-weight:bolder;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #cc101f;
 }
 
-.lambert {
-    text-align: center;
-    font-weight: bolder;
-}
+ul {text-align: left;}
 
-.text a {
-    text-decoration-color: orangered;
-    text-decoration-style: double;
-    color: #000000;
-    font-weight: bolder;
-}
+.author {margin-top: 5px;}
 
-.text {text-indent: 10px;}
-            
-b {
-    font-weight: bolder;
-    font-size: 22px;
-}
+.bio {/*border-bottom: 2px solid #fff;*/ margin-top: 5px;}
 
-.places {
-    margin-left: 10px;
-}
+li {display: inline; margin-right: 25px; font-weight: 600;}
 
-.places a {
-    color: olivedrab;
-    font-weight: bolder;
-}
-
-.places a:visited {
-    color: olivedrab;
-}
-
-/* IMAGES */
-
-img not(#band){
-    height: 250px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.right {
-    float: right;
-    padding-left: 15px;
-}
-
-.left {
-    float: left; 
-    padding-right: 15px;
-}
-
-.center {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
-.thelma {
-    display: flex;
-    float: left;
-    padding-right: 10px;
-}
-
-.morgan {
-    display: flex;
-    float: right;
-    padding-left: 10px;
-}
-
-iframe {
-    /*width: 560px;*/
-    height: 315px;
-}
+b {font-style: none; color: #cc101f;}
