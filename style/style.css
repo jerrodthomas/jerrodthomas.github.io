@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+body {
+  /*font-family: 'Georgia', serif;*/
+    font-family: "EB Garamond", serif;
+  /*background-color: #fdfbf7;*/
+    background-color: #fdfbf7;
+}
+
+.ancestor-card {
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: "EB Garamond", serif;
+    line-height: 1.6;
+    border: 5px solid #a88d73;
+    padding: 40px;
+    background-color: #fdfbf7;
+    border-radius: 10px;
+}
+
+
+.bio-header {
+    display: flex;
+    gap: 20px;
+    border-bottom: 2px solid #5a5a5a;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.vital-stats h1 { margin: 0; color: #2c3e50; }
+
+.dates { font-style: italic; color: #000; margin-top: 5px; }
+
+.quick-facts {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9em;
+}
+
+.bio-narrative h2 { border-left: 5px solid #2c3e50; padding-left: 10px; }
+
+.bio-sources {
+    margin-top: 40px;
+    font-size: 0.85em;
+    color: #555;
+    border-top: 1px solid #eee;
+}
+
+.upper {text-transform: uppercase;}
+
+.detail {font-style: italic; text-align: center;}
+
+/********** LINKS **********/
+
+a, a:visited {
+    text-decoration: none;
+    color: #cc101f;
+        font-weight: bolder;
+}
+
+a:hover {transform: scale(2);}
+section {text-align: justify;}
+
+section ul {list-style-type: none;}
+
+i {color: #fdfbf7;}
+
+/********** TABLE **********/
+th {text-align: left;}
