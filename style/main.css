@@ -120,7 +120,7 @@ ul li {
 
 /*********************************************************** MOBILE *******************************************************/
 
-@media (min-width: 400px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 600px) {
   
   body {
     font-family: "EB Garamond", serif;
