@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 body {
-  /*font-family: 'Georgia', serif;*/
     font-family: "EB Garamond", serif;
-  /*background-color: #fdfbf7;*/
-    background-color: #fdfbf7;
 }
 
 .ancestor-card {
@@ -12,9 +9,8 @@ body {
     margin: 20px auto;
     font-family: "EB Garamond", serif;
     line-height: 1.6;
-    border: 5px solid #a88d73;
+    border: 5px solid #6b8e23;
     padding: 40px;
-    background-color: #fdfbf7;
     border-radius: 10px;
 }
 
@@ -34,9 +30,15 @@ body {
     border-radius: 10px;
 }
 
-.vital-stats h1 { margin: 0; color: #2c3e50; }
+.vital-stats h1 {
+    margin: 0; color: #2c3e50;
+}
 
-.dates { font-style: italic; color: #000; margin-top: 5px; }
+.dates {
+    font-style: italic;
+    color: #000;
+    margin-top: 5px;
+}
 
 .quick-facts {
     list-style: none;
@@ -44,7 +46,10 @@ body {
     font-size: 0.9em;
 }
 
-.bio-narrative h2 { border-left: 5px solid #2c3e50; padding-left: 10px; }
+.bio-narrative h2 {
+    border-left: 5px solid #2c3e50;
+    padding-left: 10px;
+}
 
 .bio-sources {
     margin-top: 40px;
@@ -53,24 +58,67 @@ body {
     border-top: 1px solid #eee;
 }
 
-.upper {text-transform: uppercase;}
+.upper {
+    text-transform: uppercase;
+}
 
-.detail {font-style: italic; text-align: center;}
+.detail {
+    font-style: italic;
+    text-align: center;
+}
+
+p {
+    text-indent: 50px;
+}
 
 /********** LINKS **********/
 
 a, a:visited {
     text-decoration: none;
     color: #cc101f;
-        font-weight: bolder;
+    font-weight: bolder;
 }
 
-a:hover {transform: scale(2);}
-section {text-align: justify;}
+a:hover {
+    color: #000;
+}
 
-section ul {list-style-type: none;}
+section {
+    text-align: justify;
+}
 
-i {color: #fdfbf7;}
+section ul {
+    list-style-type: none;
+}
+
+i {
+    color: #fff;
+}
 
 /********** TABLE **********/
-th {text-align: left;}
+th {
+    text-align: left;
+}
+
+/*********************************************************** MOBILE *******************************************************/
+
+@media (min-width: 400px) and (max-width: 600px) {
+    .ancestor-card {
+        border: none;
+    }
+    
+    .profile-photo img {
+        width: 100px;
+        object-fit: scale-down;
+}
+
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    table {
+        display: box;
+        width: 100%;
+    }
+}
