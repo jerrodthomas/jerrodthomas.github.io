@@ -181,11 +181,12 @@ ul li {
     text-align: center;
     border: 3px solid #2c3539;
     background-color: #f5fffa;
-    border-radius: 50px;
+    border-radius: 15px;
     margin-top: -15px;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    padding: 5px;
   }
 
 /*********** MISC **********/
@@ -201,3 +202,4 @@ ul li {
     
   }
 }
+
