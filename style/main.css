@@ -1,203 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kristi&family=Monsieur+La+Doulaise&family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 body {
-  font-family: "EB Garamond", serif;
-  background-color: #fdfbf7;
-  overflow: hidden;
+    font-family: "EB Garamond", serif;
 }
 
-/*********** headers ***********/
-
-.title {
-  font-family: "Monsieur La Doulaise", cursive;
-  color: #2c3539;
-  margin-top: 5px;
-  padding-top: 5px;
-  font-size: 48px;
+.ancestor-card {
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: "EB Garamond", serif;
+    line-height: 1.6;
+    border: 5px solid #6b8e23;
+    padding: 40px;
+    border-radius: 10px;
 }
 
-h2 {
-  font-family: "EB Garamond", serif;
-  font-weight: bolder;
-  position: relative;
-  margin-top: -30px;
-  color: #fff8dc;
-  font-size: 2.8em;
-  border-radius: 15px;
-  background-image: url(untitled.jpg);
-  padding-bottom: 5px;
-  border: 1px solid #000;
+
+.bio-header {
+    display: flex;
+    gap: 20px;
+    border-bottom: 2px solid #5a5a5a;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-.title, h2 {
-  text-align: center;
-}
-/*********** DIVS AND SECTIONS ***********/
-
-.author {
-  margin-top: 5px;
-  padding-bottom: 7px;
+.profile-photo img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.bio {
-  margin-top: 5px;
-  text-align: left;
+.vital-stats h1 {
+    margin: 0; color: #2c3e50;
 }
 
-#mike {
-  width: 900px;
-  height: 224px;
-  color: #2c3539;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 5px;
-  font-weight: bolder;
+.dates {
+    font-style: italic;
+    color: #000;
+    margin-top: 5px;
 }
 
-.sources {
-  text-align: center;
-  border: 3px solid #2c3539;
-  background-color: #f5fffa;
-  border-radius: 50px;
-  margin-top: -75px;
-  width: 75%;
-    margin-left: auto;
-  margin-right: auto;
+.quick-facts {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9em;
 }
 
-/*********** LINKS ***********/
-
-a {
-  color: #2c3539;
-  text-decoration: none;
-  
+.bio-narrative h2 {
+    border-left: 5px solid #2c3e50;
+    padding-left: 10px;
 }
 
-a:visited {
-  color: #2c3539;
-  font-weight: 210;
+.bio-sources {
+    margin-top: 40px;
+    font-size: 0.85em;
+    color: #555;
+    border-top: 1px solid #eee;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.detail {
+    font-style: italic;
+    text-align: center;
+}
+
+p {
+    text-indent: 50px;
+}
+
+/********** LINKS **********/
+
+a, a:visited {
+    text-decoration: none;
+    color: #cc101f;
+    font-weight: bolder;
 }
 
 a:hover {
-  /*color: #cc101f;*/
-  font-weight: 420;
-  border-bottom: 3px solid #cc101f;
+    color: #000;
 }
 
-/*********** MISC **********/
-
-strong {
-  border-bottom: 2px solid #cc101f;
+section {
+    text-align: justify;
 }
 
-sup {
-  color: #cc101f;
-  font-weight: bolder;
-  font-size: 16px;
+section ul {
+    list-style-type: none;
 }
 
-.details {text-transform: uppercase;
-  font-weight: 999;
-  text-align: center;
+i {
+    color: #fff;
 }
 
-#note {
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
-}
-
-ul li {
-  display: inline;
-  text-align: left;
-}
-
-.media {
-  display: none;
+/********** TABLE **********/
+th {
+    text-align: left;
 }
 
 /*********************************************************** MOBILE *******************************************************/
 
 @media (min-width: 400px) and (max-width: 600px) {
-  
-  body {
-    font-family: "EB Garamond", serif;
-    background-color: #fff;
-    overflow: hidden;
-  }
-
-
-  /*********** headers ***********/
-  
-  .title {
-    font-family: "Monsieur La Doulaise", cursive;
-    color: #2c3539;
-    margin-top: 5px;
-    padding-top: 5px;
-    font-size: 48px;
-  }
-  
-  h2 {
-    background-image: none;
-    border: none;
-    color: #2c3539;
-    border-bottom: 2px solid #cc101f;
-    border-radius: 0;
-  }
-  
-  .title, h2 {
-    text-align: center;
-  }
-  
-  /*********** DIVS AND SECTIONS ***********/
-
-  div {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .author {
-    margin-top: 5px;
-    padding-bottom: 7px;
-  }
-
-.bio {
-  margin-top: 5px;
-  text-align: left;
-  }
-  
-  #mike {
-    width: 400px;
-    color: #2c3539;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 5px;
-    font-weight: bolder;
-  }
-
-  .sources {
-    text-align: center;
-    border: 3px solid #2c3539;
-    background-color: #f5fffa;
-    border-radius: 50px;
-    margin-top: -15px;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-/*********** MISC **********/
-  
-  ul {
-    display: none;
-  }
-  
-  .media {
-    text-align: center;
-    margin-top: 10px;
-    display: block;
+    .ancestor-card {
+        border: none;
+    }
     
-  }
+    .profile-photo img {
+        width: 100px;
+        object-fit: scale-down;
+}
+
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    table {
+        display: box;
+        width: 100%;
+    }
 }
