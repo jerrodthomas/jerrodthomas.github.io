@@ -6,7 +6,7 @@ body {
   overflow: hidden;
 }
 
-/*div:not(.bio, .author, .sources) {box-shadow: 5px 10px #000;}*/
+/*********** headers ***********/
 
 .title {
   font-family: "Monsieur La Doulaise", cursive;
@@ -24,43 +24,34 @@ h2 {
   color: #fff8dc;
   font-size: 2.8em;
   border-radius: 15px;
-  /*background-image: repeating-conic-gradient(#dc143c 0deg 10deg, #ffd500 10deg 20deg, #2a97fd 20deg 30deg);*/
   background-image: url(untitled.jpg);
   padding-bottom: 5px;
+  border: 1px solid #000;
 }
 
 .title, h2 {
   text-align: center;
 }
+/*********** DIVS AND SECTIONS ***********/
 
-sup {color: #cc101f;}
+.author {
+  margin-top: 5px;
+  padding-bottom: 7px;
+}
+
+.bio {
+  margin-top: 5px;
+  text-align: left;
+}
 
 #mike {
-  width: 900px; height: 224px;
+  width: 900px;
+  height: 224px;
   color: #2c3539;
-  background-repeat: no-repeat;
-  background-size: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 5px;
-}
-
-a {
-  color: #2c3539;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-a:visited {
-  color: #2c3539;
-  
-}
-
-a:hover {
-  color: #cc101f;
   font-weight: bolder;
-  text-decoration: underline;
-  text-decoration-color: #2c3539;
 }
 
 .sources {
@@ -73,24 +64,140 @@ a:hover {
     margin-left: auto;
   margin-right: auto;
 }
-ol {
-  text-align: left;
+
+/*********** LINKS ***********/
+
+a {
+  color: #2c3539;
+  text-decoration: none;
   
 }
 
-.details {
-  font-weight:bolder;
-  text-align: center;
-  text-transform: uppercase;
+a:visited {
+  color: #2c3539;
+  font-weight: 210;
+}
+
+a:hover {
+  /*color: #cc101f;*/
+  font-weight: 420;
+  border-bottom: 3px solid #cc101f;
+}
+
+/*********** MISC **********/
+
+strong {
   border-bottom: 2px solid #cc101f;
 }
 
-ul {text-align: left;}
+sup {
+  color: #cc101f;
+  font-weight: bolder;
+  font-size: 16px;
+}
 
-.author {margin-top: 5px;}
+.details {text-transform: uppercase;
+  font-weight: 999;
+  text-align: center;
+}
 
-.bio {/*border-bottom: 2px solid #fff;*/ margin-top: 5px;}
+#note {
+  text-align: center;
+}
 
-li {display: inline; margin-right: 25px; font-weight: 600;}
+ul {
+  list-style-type: none;
+}
 
-b {font-style: none; color: #cc101f;}
+ul li {
+  display: inline;
+  text-align: left;
+}
+
+.media {
+  display: none;
+}
+
+/*********************************************************** MOBILE *******************************************************/
+
+@media (min-width: 400px) and (max-width: 600px) {
+  
+  body {
+    font-family: "EB Garamond", serif;
+    background-color: #fff;
+    overflow: hidden;
+  }
+
+
+  /*********** headers ***********/
+  
+  .title {
+    font-family: "Monsieur La Doulaise", cursive;
+    color: #2c3539;
+    margin-top: 5px;
+    padding-top: 5px;
+    font-size: 48px;
+  }
+  
+  h2 {
+    background-image: none;
+    border: none;
+    color: #2c3539;
+    border-bottom: 2px solid #cc101f;
+    border-radius: 0;
+  }
+  
+  .title, h2 {
+    text-align: center;
+  }
+  
+  /*********** DIVS AND SECTIONS ***********/
+
+  div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .author {
+    margin-top: 5px;
+    padding-bottom: 7px;
+  }
+
+.bio {
+  margin-top: 5px;
+  text-align: left;
+  }
+  
+  #mike {
+    width: 400px;
+    color: #2c3539;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+    font-weight: bolder;
+  }
+
+  .sources {
+    text-align: center;
+    border: 3px solid #2c3539;
+    background-color: #f5fffa;
+    border-radius: 50px;
+    margin-top: -15px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/*********** MISC **********/
+  
+  ul {
+    display: none;
+  }
+  
+  .media {
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+    
+  }
+}
