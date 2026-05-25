@@ -137,6 +137,8 @@ ul li {
     margin-top: 5px;
     padding-top: 5px;
     font-size: 48px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   h2 {
@@ -161,11 +163,15 @@ ul li {
   .author {
     margin-top: 5px;
     padding-bottom: 7px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 .bio {
   margin-top: 5px;
   text-align: left;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   #mike {
